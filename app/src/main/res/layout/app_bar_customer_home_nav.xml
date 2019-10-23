@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerHomeNavActivity"
+    android:background="@color/SkyBlue">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_customer_home_nav" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Location"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btnEnterLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:drawableLeft="@drawable/ic_my_location"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:hint="Enter your pickup location"
+            android:padding="15dp"
+            android:textAlignment="gravity" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Samaan Asaan require acces to your Location"
+                android:textSize="18dp"
+                android:textColor="@color/White"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="We will chose your current Location as your pickup point so we require  Loction access "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/White"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginHorizontal="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/turnOnLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Turn on Location Services"
+                    android:textColor="@color/Yellow"
+                    android:clickable="true"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+               <Button
+                   android:layout_width="35dp"
+                   android:layout_height="25dp"
+                   android:background="@drawable/ic_navigate_next"
+                   />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

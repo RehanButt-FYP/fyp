@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "387856918449",
+    "firebase_url": "https://samaanasaan.firebaseio.com",
+    "project_id": "samaanasaan",
+    "storage_bucket": "samaanasaan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387856918449:android:d7436ec4db3f70d6",
+        "android_client_info": {
+          "package_name": "com.my.samaanasaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387856918449-tbqarfce8vtu2cb5fs9vcp7nvkhlhvbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.my.samaanasaan",
+            "certificate_hash": "77849a6e49d34f752b04b0a59967db263adc7b36"
+          }
+        },
+        {
+          "client_id": "387856918449-24l7h6jqmdb65fbl8prmpjlo8v21uism.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB8BEnHgrocnVXGMxQcDr7H8pBLjr2r5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387856918449-24l7h6jqmdb65fbl8prmpjlo8v21uism.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

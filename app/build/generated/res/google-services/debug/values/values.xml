@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">387856918449-24l7h6jqmdb65fbl8prmpjlo8v21uism.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://samaanasaan.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">387856918449</string>
+    <string name="google_api_key" translatable="false">AIzaSyBB8BEnHgrocnVXGMxQcDr7H8pBLjr2r5U</string>
+    <string name="google_app_id" translatable="false">1:387856918449:android:d7436ec4db3f70d6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBB8BEnHgrocnVXGMxQcDr7H8pBLjr2r5U</string>
+    <string name="google_storage_bucket" translatable="false">samaanasaan.appspot.com</string>
+    <string name="project_id" translatable="false">samaanasaan</string>
+</resources>

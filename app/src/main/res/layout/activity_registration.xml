@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:background="@color/colorPrimaryDark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="@drawable/ic_navigate_back"
+                />
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Account"
+                android:textColor="@color/White"
+                android:clickable="true"
+                android:textSize="25dp"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            />
+
+        <EditText
+            android:id="@+id/EtName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/more_rounded_border"
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/EtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/more_rounded_border"
+            android:hint="User Name"
+            android:paddingHorizontal="20dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/EtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/more_rounded_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/EtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/more_rounded_border"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:paddingHorizontal="20dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/EtCnic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/more_rounded_border"
+            android:hint="CNIC"
+            android:paddingHorizontal="20dp"
+            android:textSize="25dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/White"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="50dp">
+
+            <Button
+                android:id="@+id/BtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Cancel"
+                android:textColor="@color/White"
+                android:textSize="25dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/BtnSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Signup"
+                android:textColor="@color/White"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

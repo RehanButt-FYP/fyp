@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LuggageEstimateActivity"
+    android:orientation="vertical"
+    android:background="@color/SkyBlue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_width="23dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ic_navigate_back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp">
+
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luggage Estimate"
+            android:textColor="@color/White"
+            android:textSize="19dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/White"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingHorizontal="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approx. Weight (TON)*   :  "
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:hint="0.0"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length (ft)           Width (ft)               Height (ft)"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="25dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/lth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/wth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:layout_marginRight="10dp"
+            android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            >
+            <Button
+                android:id="@+id/btnCalcVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calc. Total Volume"
+                android:textAllCaps="false"
+                android:layout_marginRight="50dp"
+                android:textSize="16dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/White"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/Vol"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ft"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimary"
+                android:text="Enter Luggage Detail"
+                android:textColor="@color/White"
+                android:gravity="center"
+                android:textSize="16dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/White"
+                android:hint="What type of luggage you want to transport?"
+                android:gravity="top"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

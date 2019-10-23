@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="580dp"
+    android:layout_gravity="center"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/roundedcorner"
+            android:text="X"
+            android:textAlignment="center"
+            android:textColor="#233"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:src="@drawable/truck"/>
+
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textFontWeight="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(Transport Truck)"
+            android:textColor="#AC6727"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Model 2012"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="By Mazda Motor Coorporation"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Medium Sized Truck"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2 Tons Capacity"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SelectVehicleButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:background="#B7B7B7"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/lblBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Select Vehicle"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.523"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Rs. 2300"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.523"
+                android:textSize="20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
